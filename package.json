@@ -1,0 +1,15 @@
+{
+  "name": "lit-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Huy",
+  "license": "MIT",
+  "dependencies": {
+    "engine.io": "^1.6.9",
+    "express": "^4.13.4"
+  }
+}

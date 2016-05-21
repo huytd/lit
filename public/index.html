@@ -1,0 +1,17 @@
+<script src="js/engine.io.js"></script>
+<script src="js/buffer.js"></script>
+<script>
+  var socket = new eio.Socket('ws://localhost:5000/');
+  socket.on('open', function(){
+    socket.on('message', function(data){
+    	console.log('Received:', BufferUtil().toString(data));
+        socket.send(BufferUtil().from(JSON.stringify({
+            event: 'reply',
+            message: {
+                text: 'Everything is just a crap here. Need to have the game client interface.'
+            }
+        })))
+    });
+    socket.on('close', function(){});
+  });
+</script>
