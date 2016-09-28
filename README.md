@@ -1,16 +1,30 @@
 # lit: a better WebSocket game server
 
-:fire: **lit** is an experimental WebSocket game server based on [engine.io](https://github.com/socketio/engine.io)
+<img src="http://img15.hostingpics.net/pics/113515lit.png" width="400">
 
-**lit** is under development! there are still many things to do (benchmark, test,...) not ready for production yet!
+**lit** is under development! There are still many things to do, it is not ready for production.
 
 ## Why this?
-Few months ago, I built a [cloned version of AgarIO](https://github.com/huytd/agar.io-clone). I'm still not happy with the networking part of the game yet. It still has some bug, laggy and unable to handle the large amount of players. So I decided to quit using Socket.IO and moved to a lower level library that built Socket.IO, it is Engine.IO, and focus on binary data oriented instead of transferring string data. Let's see will this implement will improve it or not.
+Few months ago, I built a [cloned version of AgarIO](https://github.com/huytd/agar.io-clone). I'm still not happy with the networking part of the game yet. It still has some bugs, it's laggy and unable to handle the large amount of players. So I decided to quit using Socket.IO and moved to a lower level library called Engine.IO. It focuses on binary data  instead of string data, thus improving performance.
 
-## Features:
+## Getting started:
 
-- Hashtable client management (for faster lookup)
-- Binary data transmission
+#### Server
 
-# License
+```
+npm install
+```
+```
+npm start
+```
+
+Backend logic is located in ```server.js```
+
+#### Client
+
+Navigate to ```http://localhost:3000/```
+
+Game logic is located in ```public/js/game.js```
+
+## License
 Published under MIT License.
