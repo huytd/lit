@@ -6,6 +6,10 @@
 
 **Thank you so much [@Ulydev](https://github.com/ulydev) for the awesome logo!**
 
+## Demo
+
+I made a demo game using this library, [check it out](https://github.com/huytd/lit-demo)
+
 ## Why this?
 Few months ago, I built a [cloned version of AgarIO](https://github.com/huytd/agar.io-clone). I'm still not happy with the networking part of the game yet. It still has some bugs, it's laggy and unable to handle the large amount of players. So I decided to quit using Socket.IO and moved to a lower level library called Engine.IO. It focuses on binary data  instead of string data, thus improving performance.
 
